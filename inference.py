@@ -33,7 +33,7 @@ def get_model():
         if not os.path.exists(MODEL_PATH):
             raise FileNotFoundError(
                 f"Model checkpoint not found: {MODEL_PATH}. "
-                "Place unetr_lite_v3_best.pt under models/ or set MODEL_PATH."
+                "Upload model to Railway Volume or set MODEL_PATH."
             )
 
         model = UNETR_Lite_v3_DS(in_channels=1, num_classes=N_CLASSES, base=24).to(DEVICE)
