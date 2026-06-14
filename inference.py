@@ -18,7 +18,7 @@ N_CLASSES = 5  # 0 background + 4 organs
 ROI_SIZE = (96, 96, 72)
 LABELS = {1: "Liver", 2: "R_Kidney", 3: "L_Kidney", 4: "Spleen"}
 
-MODEL_PATH = os.getenv("MODEL_PATH", "models/unetr_lite_v3_best.pt")
+MODEL_PATH = os.getenv("MODEL_PATH","/unetr_lite_v3_best.pt")
 MODEL_VERSION = "UNETR_Lite_v3_DS_v1"
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
